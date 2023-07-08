@@ -1,0 +1,274 @@
+*{
+    box-sizing: border-box;
+}
+
+.container{
+    position: relative;
+    width: 25%;
+}
+
+.container img{
+    display: block;
+    height: auto;
+    width: 100%;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(12, 170, 243);
+    transition: 0.5s ease-in-out;
+    opacity: 0;
+}
+
+.container:hover .overlay{
+    opacity: 1;
+}
+
+.text{
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Opacity with Box */
+
+.middle{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    transition: 0.5s ease-in-out;
+    opacity: 0;
+}
+
+.container:hover .middle{
+    opacity: 1;
+}
+
+.container:hover .image1{
+    opacity: 0.3;
+}
+
+.text1{
+    background-color: green;
+    padding: 12px;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.image1{
+    opacity: 1;
+    display: block;
+    height: auto;
+    width: 100%;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+/* Image Overlay Slide */
+.container2{
+    position: relative;
+    width: 25%;
+}
+
+.image2{
+    display: block;
+    height: auto;
+    width: 100%;
+}
+
+.overlay2{
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    height: 0;
+    width: 100%;
+    background-color: rgb(12, 170, 243);
+    transition: 0.5s ease-in-out;
+    overflow: hidden;
+}
+
+.container2:hover .overlay2{
+    bottom: 0;
+    height: 100%;
+}
+
+.text2{
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Slide in Overlay from the Bottom */
+
+.container3{
+    position: relative;
+    width: 25%;
+}
+
+.image3{
+    display: block;
+    height: auto;
+    width: 100%;
+}
+
+.overlay3{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    height: 0;
+    width: 100%;
+    background-color: rgb(12, 170, 243);
+    transition: 0.5s ease-in-out;
+    overflow: hidden;
+}
+
+.container3:hover .overlay3{
+    top: 0;
+    height: 100%;
+}
+
+.text3{
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Image Overlay Zoom */
+
+.container4{
+    position: relative;
+    width: 25%;
+}
+
+.image4{
+    display: block;
+    height: auto;
+    width: 100%;
+}
+
+.overlay4{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(12, 170, 243);
+    transition: 0.5s ease-in-out;
+    overflow: hidden;
+    transform: scale(0);
+}
+
+.container4:hover .overlay4{
+    transform: scale(1);
+}
+
+.text4{
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Image Overlay Title */
+.container5{
+    position: relative;
+    width: 25%;
+}
+
+.image5{
+    display: block;
+    height: auto;
+    width: 100%;
+}
+
+.overlay5{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.151);
+    transition: 0.5s ease;
+    overflow: hidden;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    padding: 20px;
+    opacity: 0;
+}
+
+.container5:hover .overlay5{
+    opacity: 1;
+}
+
+/* Image Overlay Icon */
+
+.container6{
+    position: relative;
+    width: 25%;
+}
+
+.image6{
+    display: block;
+    height: auto;
+    width: 100%;
+}
+
+.overlay6{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: red;
+    transition: 0.5s ease;
+    overflow: hidden;
+    opacity: 0;
+}
+
+.container6:hover .overlay6{
+    opacity: 1;
+}
+
+.icon{
+    position: absolute;
+    color: white;
+    font-size: 50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
